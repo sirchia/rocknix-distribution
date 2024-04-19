@@ -656,7 +656,7 @@ diff -rupN linux.orig/arch/arm64/boot/dts/rockchip/rk3326-gameconsole-r36s.dts l
 diff -rupN linux.orig/arch/arm64/boot/dts/rockchip/rk3326-gameconsole-r3xs.dtsi linux/arch/arm64/boot/dts/rockchip/rk3326-gameconsole-r3xs.dtsi
 --- linux.orig/arch/arm64/boot/dts/rockchip/rk3326-gameconsole-r3xs.dtsi	1970-01-01 00:00:00.000000000 +0000
 +++ linux/arch/arm64/boot/dts/rockchip/rk3326-gameconsole-r3xs.dtsi	2024-03-24 22:46:19.201959013 +0000
-@@ -0,0 +1,545 @@
+@@ -0,0 +1,544 @@
 +// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
 +/*
 + * # Copyright (C) 2024-present JELOS (https://github.com/JustEnoughLinuxOS)
@@ -867,9 +867,8 @@ diff -rupN linux.orig/arch/arm64/boot/dts/rockchip/rk3326-gameconsole-r3xs.dtsi 
 +};
 +
 +&internal_display {
-+	compatible = "gameconsole,r36s-panel", "sitronix,st7703";
-+	iovcc-supply = <&vcc_lcd>;
-+	vdd-supply = <&vcc_lcd>;
++       compatible = "boe,th101mb31ig002-28a";
++       power-supply = <&vcc_lcd>;
 +};
 +
 +&i2c0 {
